@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChisFlash Community - DIY Hardware Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button onclick="switchLanguage('zh')" id="btn-zh">中文</button>
+        <button onclick="switchLanguage('en')" id="btn-en">English</button>
+        <button onclick="switchLanguage('ja')" id="btn-ja">日本語</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>ChisFlash Community</h1>
+            <p class="subtitle" data-i18n="header.subtitle">A DIY Hardware Community - Mark Your Creation with "Chis"</p>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <div class="container">
+            <h2 data-i18n="intro.title">About ChisFlash Community</h2>
+            <p data-i18n="intro.description">
+                ChisFlash Community is an open DIY hardware community. Anyone can mark their DIY products with "Chis" to show they are part of this creative ecosystem.
+            </p>
+        </div>
+    </section>
+
+    <!-- Open Source Projects Section -->
+    <section class="projects open-source">
+        <div class="container">
+            <h2 data-i18n="opensource.title">Open Source Projects</h2>
+            <p data-i18n="opensource.description">These projects are fully open source and available for the community.</p>
+            <div id="opensource-projects" class="project-grid"></div>
+        </div>
+    </section>
+
+    <!-- Closed Source Projects Section -->
+    <section class="projects closed-source">
+        <div class="container">
+            <h2 data-i18n="closedsource.title">Upcoming Projects</h2>
+            <p data-i18n="closedsource.description">These projects are currently in development and not yet open sourced.</p>
+            <div id="closedsource-projects" class="project-grid"></div>
+        </div>
+    </section>
+
+    <!-- Store Lists Section -->
+    <section class="stores">
+        <div class="container">
+            <h2 data-i18n="stores.title">Store References</h2>
+            <div class="store-disclaimer">
+                <p data-i18n="stores.disclaimer">
+                    ⚠️ These stores are NOT affiliated with ChisFlash Community. This list is for reference only. Please conduct your own research before purchasing.
+                </p>
+            </div>
+
+            <!-- Whitelist -->
+            <div class="store-list whitelist">
+                <h3 data-i18n="stores.whitelist.title">✅ Recommended Stores</h3>
+                <p data-i18n="stores.whitelist.description">Stores with good community feedback</p>
+                <div id="whitelist-stores" class="store-grid"></div>
+            </div>
+
+            <!-- Blacklist -->
+            <div class="store-list blacklist">
+                <h3 data-i18n="stores.blacklist.title">⚠️ Caution Advised</h3>
+                <p data-i18n="stores.blacklist.description">Stores with negative community reports</p>
+                <div id="blacklist-stores" class="store-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 data-i18n="footer.contact.title">Contact Us</h3>
+            <p data-i18n="footer.contact.description">
+                For listing requests or other inquiries, please contact us:
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <a href="mailto:chisbread@gmail.com">chisbread@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span>💬</span>
+                    <a href="https://discord.gg/Hq8PSSpnEM" target="_blank">Discord Community</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ChisFlash Community</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
