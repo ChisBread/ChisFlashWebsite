@@ -118,6 +118,10 @@ section h2 {
     background: var(--light-bg);
 }
 
+.projects.partial-open-source {
+    background: #FFF4E0;
+}
+
 .projects p {
     text-align: center;
     color: var(--text-secondary);

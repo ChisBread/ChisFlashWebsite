@@ -34,6 +34,36 @@ function loadProjects() {
         openSourceContainer.appendChild(card);
     });
 
+    // Partial Open Source Projects
+    const partialOpenSourceContainer = document.getElementById('partialopensource-projects');
+    partialOpenSourceContainer.innerHTML = '';
+
+    partialOpenSourceProjects.forEach(project => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+
+        const name = project.name[lang] || project.name.en;
+        const description = project.description[lang] || project.description.en;
+
+        let linksHTML = '';
+        if (project.links) {
+            linksHTML = '<div class="project-links">';
+            project.links.forEach(link => {
+                const label = typeof link.label === 'object' ? (link.label[lang] || link.label.en) : link.label;
+                linksHTML += `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+            });
+            linksHTML += '</div>';
+        }
+
+        card.innerHTML = `
+            <h3>${name}</h3>
+            <p>${description}</p>
+            ${linksHTML}
+        `;
+
+        partialOpenSourceContainer.appendChild(card);
+    });
+
     // Closed Source Projects
     const closedSourceContainer = document.getElementById('closedsource-projects');
     closedSourceContainer.innerHTML = '';

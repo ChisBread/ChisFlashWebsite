@@ -124,6 +124,25 @@ const openSourceProjects = [
     }
 ];
 
+const partialOpenSourceProjects = [
+    {
+        name: {
+            zh: "SuperChis Prime 平价TF烧录卡",
+            en: "SuperChis Prime Affordable TF Flashcart",
+            ja: "SuperChis Prime 手頃なTFフラッシュカート"
+        },
+        description: {
+            zh: "GBA烧录卡 - 平价TF卡烧录卡解决方案。",
+            en: "GBA Flashcart - Affordable TF card flashcart solution.",
+            ja: "GBAフラッシュカート - 手頃な価格のTFカードソリューション。"
+        },
+        links: [
+            { label: { zh: "SuperCard-Like HDL", en: "SuperCard-Like HDL", ja: "SuperCard-Like HDL" }, url: "https://github.com/ChisBread/SuperChis" },
+            { label: { zh: "固件", en: "Firmware", ja: "ファームウェア" }, url: "https://github.com/davidgfnet/superfw" }
+        ]
+    }
+];
+
 const closedSourceProjects = [
     {
         name: {
@@ -186,23 +205,6 @@ const closedSourceProjects = [
             zh: "GBA烧录卡 - 重力+陀螺仪+震动功能支持。",
             en: "GBA Flashcart - Gravity, gyroscope, and rumble support.",
             ja: "GBAフラッシュカート - 重力・ジャイロ・振動機能対応。"
-        },
-        status: {
-            zh: "暂无开源计划",
-            en: "No open source plan",
-            ja: "オープンソース化の予定なし"
-        }
-    },
-    {
-        name: {
-            zh: "SuperChis Prime 平价TF烧录卡",
-            en: "SuperChis Prime Affordable TF Flashcart",
-            ja: "SuperChis Prime 手頃なTFフラッシュカート"
-        },
-        description: {
-            zh: "GBA烧录卡 - 平价TF卡烧录卡解决方案。",
-            en: "GBA Flashcart - Affordable TF card flashcart solution.",
-            ja: "GBAフラッシュカート - 手頃な価格のTFカードフラッシュカートソリューション。"
         },
         status: {
             zh: "暂无开源计划",
