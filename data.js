@@ -4,33 +4,122 @@
 const openSourceProjects = [
     {
         name: {
-            zh: "ChisFlash 核心固件",
-            en: "ChisFlash Core Firmware",
-            ja: "ChisFlash コアファームウェア"
+            zh: "ChisFlash 1M SRAM",
+            en: "ChisFlash 1M SRAM",
+            ja: "ChisFlash 1M SRAM"
         },
         description: {
-            zh: "ChisFlash 的核心固件系统，支持多种硬件平台。",
-            en: "The core firmware system for ChisFlash, supporting multiple hardware platforms.",
-            ja: "複数のハードウェアプラットフォームをサポートする ChisFlash のコアファームウェアシステム。"
+            zh: "GBA烧录卡 - 支持大部分游戏，需要电池，但是最便宜的选择。",
+            en: "GBA Flashcart - Supports most games, requires battery, but the most affordable option.",
+            ja: "GBAフラッシュカート - ほとんどのゲームに対応、バッテリーが必要ですが、最も手頃な価格です。"
         },
         links: [
-            { label: "GitHub", url: "https://github.com/chisflash/core" }
+            { label: "GitHub", url: "https://github.com/ChisBread/ChisFlash" }
         ]
     },
     {
         name: {
-            zh: "ChisFlash 开发工具",
-            en: "ChisFlash Dev Tools",
-            ja: "ChisFlash 開発ツール"
+            zh: "ChisFlash 1M FRAM",
+            en: "ChisFlash 1M FRAM",
+            ja: "ChisFlash 1M FRAM"
         },
         description: {
-            zh: "用于开发和调试 ChisFlash 项目的工具套件。",
-            en: "A toolkit for developing and debugging ChisFlash projects.",
-            ja: "ChisFlash プロジェクトを開発およびデバッグするためのツールキット。"
+            zh: "GBA烧录卡 - 支持大部分游戏，不需要电池。",
+            en: "GBA Flashcart - Supports most games, no battery required.",
+            ja: "GBAフラッシュカート - ほとんどのゲームに対応、バッテリー不要。"
         },
         links: [
-            { label: "GitHub", url: "https://github.com/chisflash/devtools" },
-            { label: { zh: "文档", en: "Docs", ja: "ドキュメント" }, url: "https://docs.chisflash.com" }
+            { label: "GitHub", url: "https://github.com/ChisBread/ChisFlash" }
+        ]
+    },
+    {
+        name: {
+            zh: "ChisFlash 1M Flash",
+            en: "ChisFlash 1M Flash",
+            ja: "ChisFlash 1M Flash"
+        },
+        description: {
+            zh: "GBA烧录卡 - 支持宝可梦等游戏。",
+            en: "GBA Flashcart - Supports Pokémon and similar games.",
+            ja: "GBAフラッシュカート - ポケモンなどのゲームに対応。"
+        },
+        links: [
+            { label: "GitHub", url: "https://github.com/ChisBread/ChisFlash" }
+        ]
+    },
+    {
+        name: {
+            zh: "ChisFlash 虚拟铁电卡",
+            en: "ChisFlash Virtual FRAM Cart",
+            ja: "ChisFlash 仮想FRAMカート"
+        },
+        description: {
+            zh: "GBA烧录卡 - 低成本的1M FRAM替代方案。",
+            en: "GBA Flashcart - Low-cost 1M FRAM alternative.",
+            ja: "GBAフラッシュカート - 低コストの1M FRAM代替品。"
+        },
+        links: [
+            { label: "OSHWHub", url: "https://oshwhub.com/morinaka/gba-xu-ni-tie-dian-ka-chisflash-kai-yuan-zuo-pin" }
+        ]
+    },
+    {
+        name: {
+            zh: "ChisFlash MBC5 烧录卡",
+            en: "ChisFlash MBC5 Flashcart",
+            ja: "ChisFlash MBC5 フラッシュカート"
+        },
+        description: {
+            zh: "GBC烧录卡 - MBC5芯片支持。",
+            en: "GBC Flashcart - MBC5 chip support.",
+            ja: "GBCフラッシュカート - MBC5チップ対応。"
+        },
+        links: [
+            { label: "GitHub", url: "https://github.com/moribaka/ChisFlash-MBC5" }
+        ]
+    },
+    {
+        name: {
+            zh: "ChisFlash MBCX 烧录卡",
+            en: "ChisFlash MBCX Flashcart",
+            ja: "ChisFlash MBCX フラッシュカート"
+        },
+        description: {
+            zh: "GBC烧录卡 - 支持RTC，并且通过全面的RTC测试。",
+            en: "GBC Flashcart - RTC support, passed comprehensive RTC testing.",
+            ja: "GBCフラッシュカート - RTC対応、包括的なRTCテストに合格。"
+        },
+        links: [
+            { label: "GitHub", url: "https://github.com/moribaka/ChisFlash-MBCX" }
+        ]
+    },
+    {
+        name: {
+            zh: "beggar_socket",
+            en: "beggar_socket",
+            ja: "beggar_socket"
+        },
+        description: {
+            zh: "轻量级低成本GBA卡带读取器。",
+            en: "Lightweight low-cost GBA cart reader.",
+            ja: "軽量で低コストのGBAカートリーダー。"
+        },
+        links: [
+            { label: "GitHub", url: "https://github.com/julpage/beggar_socket" }
+        ]
+    },
+    {
+        name: {
+            zh: "MoriPower GBA锂电充放模块",
+            en: "MoriPower GBA Li-ion Module",
+            ja: "MoriPower GBAリチウムイオンモジュール"
+        },
+        description: {
+            zh: "GBA用锂电充放模块，基于IP5306芯片。",
+            en: "Li-ion battery charging module for GBA, based on IP5306.",
+            ja: "IP5306ベースのGBA用リチウムイオン充電モジュール。"
+        },
+        links: [
+            { label: "OSHWHub", url: "https://oshwhub.com/morinaka/moripower-gba-yong-li-dian-chong-fang-mo-kuai-ip5306-ban-ben" }
         ]
     }
 ];
@@ -38,90 +127,91 @@ const openSourceProjects = [
 const closedSourceProjects = [
     {
         name: {
-            zh: "ChisFlash Pro",
-            en: "ChisFlash Pro",
-            ja: "ChisFlash Pro"
+            zh: "ChisFlash RTC (v1.1)",
+            en: "ChisFlash RTC (v1.1)",
+            ja: "ChisFlash RTC (v1.1)"
         },
         description: {
-            zh: "专业版固件，提供更多高级功能和性能优化。",
-            en: "Professional firmware with advanced features and performance optimizations.",
-            ja: "高度な機能とパフォーマンスの最適化を備えたプロフェッショナルファームウェア。"
+            zh: "GBA烧录卡 - 实时时钟功能支持。",
+            en: "GBA Flashcart - Real-time clock support.",
+            ja: "GBAフラッシュカート - リアルタイムクロック機能対応。"
         },
         status: {
-            zh: "开发中",
-            en: "In Development",
-            ja: "開発中"
+            zh: "暂无开源计划",
+            en: "No open source plan",
+            ja: "オープンソース化の予定なし"
         }
     },
     {
         name: {
-            zh: "ChisFlash 云服务",
-            en: "ChisFlash Cloud Services",
-            ja: "ChisFlash クラウドサービス"
+            zh: "ChisFlash Rumble (v1.2)",
+            en: "ChisFlash Rumble (v1.2)",
+            ja: "ChisFlash Rumble (v1.2)"
         },
         description: {
-            zh: "基于云的设备管理和固件更新服务。",
-            en: "Cloud-based device management and firmware update services.",
-            ja: "クラウドベースのデバイス管理とファームウェア更新サービス。"
+            zh: "GBA烧录卡 - 震动功能支持。",
+            en: "GBA Flashcart - Rumble feature support.",
+            ja: "GBAフラッシュカート - 振動機能対応。"
         },
         status: {
-            zh: "计划中",
-            en: "Planned",
-            ja: "計画中"
-        }
-    }
-];
-
-const whitelistStores = [
-    {
-        name: "示例商店 A",
-        nameEn: "Example Store A",
-        nameJa: "サンプルストア A",
-        description: {
-            zh: "提供优质的 ChisFlash 兼容产品，服务良好。",
-            en: "Provides quality ChisFlash-compatible products with good service.",
-            ja: "優れたサービスで高品質な ChisFlash 互換製品を提供。"
-        },
-        url: "https://example-store-a.com",
-        region: {
-            zh: "全球",
-            en: "Global",
-            ja: "グローバル"
+            zh: "暂无开源计划",
+            en: "No open source plan",
+            ja: "オープンソース化の予定なし"
         }
     },
     {
-        name: "示例商店 B",
-        nameEn: "Example Store B",
-        nameJa: "サンプルストア B",
-        description: {
-            zh: "专注于定制 DIY 硬件，交付快速。",
-            en: "Specializes in custom DIY hardware with fast delivery.",
-            ja: "迅速な配送でカスタム DIY ハードウェアに特化。"
+        name: {
+            zh: "ChisFlash Solar+RTC",
+            en: "ChisFlash Solar+RTC",
+            ja: "ChisFlash Solar+RTC"
         },
-        url: "https://example-store-b.com",
-        region: {
-            zh: "亚洲",
-            en: "Asia",
-            ja: "アジア"
+        description: {
+            zh: "GBA烧录卡 - 阳光传感器+实时时钟功能支持。",
+            en: "GBA Flashcart - Solar sensor and real-time clock support.",
+            ja: "GBAフラッシュカート - 太陽センサーとリアルタイムクロック対応。"
+        },
+        status: {
+            zh: "暂无开源计划",
+            en: "No open source plan",
+            ja: "オープンソース化の予定なし"
+        }
+    },
+    {
+        name: {
+            zh: "ChisFlash Gravity+Gyro+Rumble",
+            en: "ChisFlash Gravity+Gyro+Rumble",
+            ja: "ChisFlash Gravity+Gyro+Rumble"
+        },
+        description: {
+            zh: "GBA烧录卡 - 重力+陀螺仪+震动功能支持。",
+            en: "GBA Flashcart - Gravity, gyroscope, and rumble support.",
+            ja: "GBAフラッシュカート - 重力・ジャイロ・振動機能対応。"
+        },
+        status: {
+            zh: "暂无开源计划",
+            en: "No open source plan",
+            ja: "オープンソース化の予定なし"
+        }
+    },
+    {
+        name: {
+            zh: "SuperChis Prime 平价TF烧录卡",
+            en: "SuperChis Prime Affordable TF Flashcart",
+            ja: "SuperChis Prime 手頃なTFフラッシュカート"
+        },
+        description: {
+            zh: "GBA烧录卡 - 平价TF卡烧录卡解决方案。",
+            en: "GBA Flashcart - Affordable TF card flashcart solution.",
+            ja: "GBAフラッシュカート - 手頃な価格のTFカードフラッシュカートソリューション。"
+        },
+        status: {
+            zh: "暂无开源计划",
+            en: "No open source plan",
+            ja: "オープンソース化の予定なし"
         }
     }
 ];
 
-const blacklistStores = [
-    {
-        name: "警示商店 X",
-        nameEn: "Warning Store X",
-        nameJa: "警告ストア X",
-        reason: {
-            zh: "多次报告产品质量问题和售后服务差。",
-            en: "Multiple reports of quality issues and poor after-sales service.",
-            ja: "品質問題とアフターサービスの悪さに関する複数の報告。"
-        },
-        url: "https://example-bad-store.com",
-        region: {
-            zh: "未知",
-            en: "Unknown",
-            ja: "不明"
-        }
-    }
-];
+const whitelistStores = [];
+
+const blacklistStores = [];
