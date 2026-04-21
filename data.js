@@ -136,6 +136,7 @@ const partialOpenSourceProjects = [
             en: "GBA Flashcart - Affordable TF card flashcart solution.",
             ja: "GBAフラッシュカート - 手頃な価格のTFカードソリューション。"
         },
+        cardUrl: "https://www.aliexpress.com/item/1005011542077406.html",
         links: [
             { label: { zh: "SuperCard-Like HDL", en: "SuperCard-Like HDL", ja: "SuperCard-Like HDL" }, url: "https://github.com/ChisBread/SuperChis" },
             { label: { zh: "固件", en: "Firmware", ja: "ファームウェア" }, url: "https://github.com/davidgfnet/superfw" }
@@ -214,6 +215,23 @@ const closedSourceProjects = [
     }
 ];
 
-const whitelistStores = [];
+const whitelistStores = [
+    {
+        name: "ChisFamily (AliExpress)",
+        nameEn: "ChisFamily (AliExpress)",
+        nameJa: "ChisFamily (AliExpress)",
+        description: {
+            zh: "ChisFamily 平价TF烧录卡推荐店铺。",
+            en: "Recommended store for the ChisFamily affordable TF flashcart.",
+            ja: "ChisFamily 手頃なTFフラッシュカートのおすすめストア。"
+        },
+        region: {
+            zh: "全球",
+            en: "Global",
+            ja: "グローバル"
+        },
+        url: "https://www.aliexpress.com/store/1105317497"
+    }
+];
 
 const blacklistStores = [];

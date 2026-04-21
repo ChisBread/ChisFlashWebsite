@@ -61,6 +61,20 @@ function loadProjects() {
             ${linksHTML}
         `;
 
+        if (project.cardUrl) {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', () => {
+                window.open(project.cardUrl, '_blank', 'noopener,noreferrer');
+            });
+
+            // Keep button links working independently from the card click.
+            card.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', event => {
+                    event.stopPropagation();
+                });
+            });
+        }
+
         partialOpenSourceContainer.appendChild(card);
     });
 
